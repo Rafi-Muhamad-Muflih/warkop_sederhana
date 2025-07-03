@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Warkop Modern</title>
+    <link rel="icon" type="image/png" href="/img/coffy.jpeg" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #e3f2fd 0%, #fffde7 100%);
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        .about-img {
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px rgba(80,80,80,0.12);
+            object-fit: cover;
+            width: 100%;
+            height: 340px;
+        }
+        .about-section {
+            background: #fff;
+            border-radius: 2rem;
+            box-shadow: 0 6px 24px rgba(80,80,80,0.10);
+            padding: 2.5rem 2rem;
+        }
+        .icon-box {
+            background: #ede7f6;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(80,80,80,0.08);
+            margin-bottom: 1.5rem;
+        }
+        .icon-box i {
+            font-size: 2.2rem;
+            color: #512da8;
+        }
+        .about-title {
+            color: #3e2723;
+            font-weight: bold;
+        }
+        /* Animasi garis bawah pada nav-link hanya saat hover */
+        .navbar-nav .nav-link {
+            position: relative;
+            transition: color 0.2s;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 2px;
+            width: 0;
+            height: 3px;
+            background: #512da8;
+            border-radius: 2px;
+            transition: width 0.3s cubic-bezier(.4, 0, .2, 1);
+        }
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+        .navbar {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1030;
+            transition: box-shadow 0.2s;
+        }
+        .navbar.scrolled {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <img src="/img/coffy.jpeg" alt="Logo" width="36" height="36" class="me-2 rounded-circle"
+                style="object-fit:cover;"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=80&q=80';">
+            Warkop Modern
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="home1.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h1 class="about-title mb-3">Tentang Warkop Modern</h1>
+            <p class="lead" style="color:#6d4c41;">Menghadirkan pengalaman ngopi modern dengan sentuhan klasik dan suasana nyaman untuk semua kalangan.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <div class="container pb-5">
+        <div class="row align-items-center about-section">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" class="about-img" alt="Tentang Warkop Modern">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3" style="color:#512da8;">Siapa Kami?</h2>
+                <p style="font-size:1.15rem; color:#6d4c41;">
+                    Warkop Modern adalah tempat berkumpul yang menggabungkan cita rasa kopi terbaik Indonesia, makanan lezat, dan suasana yang nyaman. Kami percaya bahwa setiap cangkir kopi membawa cerita dan kebersamaan.
+                </p>
+                <ul class="list-unstyled mb-0" style="color:#6d4c41;">
+                    <li>✔️ Biji kopi pilihan dari petani lokal</li>
+                    <li>✔️ Tempat nyaman & Instagramable</li>
+                    <li>✔️ Menu makanan dan minuman variatif</li>
+                    <li>✔️ Pelayanan ramah dan profesional</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Visi Misi & Keunggulan -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="icon-box text-center">
+                    <i class="bi bi-eye-fill mb-2"></i>
+                    <h5 class="fw-bold mt-2">Visi</h5>
+                    <p class="mb-0" style="color:#6d4c41;">Menjadi warkop pilihan utama untuk semua generasi dengan kualitas dan pelayanan terbaik.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box text-center">
+                    <i class="bi bi-bullseye mb-2"></i>
+                    <h5 class="fw-bold mt-2">Misi</h5>
+                    <p class="mb-0" style="color:#6d4c41;">Menyajikan kopi, makanan, dan minuman berkualitas dalam suasana yang hangat dan bersahabat.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box text-center">
+                    <i class="bi bi-star-fill mb-2"></i>
+                    <h5 class="fw-bold mt-2">Keunggulan</h5>
+                    <p class="mb-0" style="color:#6d4c41;">Kopi premium, menu variatif, tempat nyaman, dan pelayanan ramah untuk pengalaman terbaik Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-5 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                    <span class="fw-bold" style="color:#3e2723;">&copy; 2025 Warkop Modern</span>
+                    <span class="text-muted ms-2">All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none text-dark me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="#" class="text-decoration-none text-dark me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-envelope-fill"></i> Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Efek shadow pada navbar saat scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
